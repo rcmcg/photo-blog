@@ -9,7 +9,7 @@ export function BlogPostPreview({ id, title}: BlogPostPreviewProps) {
   let navigate = useNavigate()
 
   function handleClick() {
-    navigate("/post")
+    navigate("/post/" + id)
   }
 
   return (
