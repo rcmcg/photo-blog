@@ -8,8 +8,18 @@ export function Header() {
   }
 
   return (
-    <button onClick={handleClick}>
-      Home
-    </button>
+    <>
+      <div className={"flex-col justify-center"}>
+        <div>
+          Reece McGowan Photo Blog
+        </div>
+        <button
+          className={"font-funnel-display text-9xl"}
+          onClick={handleClick}
+        >
+          Home
+        </button>
+      </div>
+    </>
   )
 }
