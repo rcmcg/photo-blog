@@ -1,6 +1,10 @@
+import {useNavigate} from "react-router";
+
 export function Header() {
+  let navigate = useNavigate()
+
   function handleClick() {
-    console.log("Clicked!")
+    navigate("/")
   }
 
   return (
