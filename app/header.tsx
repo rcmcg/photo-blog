@@ -10,9 +10,6 @@ export function Header() {
   return (
     <>
       <div className={"flex-col justify-center"}>
-        <div>
-          Reece McGowan Photo Blog
-        </div>
         <button
           className={"font-funnel-display text-9xl"}
           onClick={handleClick}
