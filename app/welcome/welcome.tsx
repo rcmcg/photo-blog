@@ -1,17 +1,30 @@
-import Markdown from "react-markdown";
 import {Header} from "~/header";
+import {BlogPostPreview} from "~/blogPostPreview";
 
 export function Welcome() {
 
-  const markdown = '# Hi, *Pluto*!'
+  let blogPosts = [
+    {
+      id: 0,
+      title: "First blog post"
+    },
+    {
+      id: 1,
+      title: "Second blog post"
+    }
+  ]
 
   return (
     <>
       <div className={"flex-col"}>
         <Header />
-        <div className={"flex items-center"}>
-          <Markdown>{markdown}</Markdown>
-        </div>
+        {blogPosts.map(blogPost =>
+          <BlogPostPreview
+            key={blogPost.id}
+            id={blogPost.id}
+            title={blogPost.title}
+          />
+        )}
       </div>
     </>
   );
