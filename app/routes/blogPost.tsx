@@ -2,6 +2,7 @@ import {Header} from "~/header";
 import {useParams} from "react-router";
 import blogPosts from "~/posts";
 import Markdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 export default function BlogPost() {
   let params = useParams();
@@ -24,7 +25,7 @@ export default function BlogPost() {
           </div>
           <hr className={"mt-4 mb-4"}/>
           <div className={"markdown-content text-xl"}>
-            <Markdown>{blogPost.content}</Markdown>
+            <Markdown rehypePlugins={[rehypeRaw]}>{blogPost.content}</Markdown>
           </div>
         </div>
       </div>

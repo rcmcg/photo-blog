@@ -32,5 +32,12 @@ body {
 }
 
 .markdown-content img {
-  max-width: 50%;
+  max-width: 75%;
+}
+
+.markdown-content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
 }
