@@ -18,6 +18,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  background-image: url("public/background/skytrain-rain-droplets.jpg");
+  background-size: cover;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
