@@ -22,7 +22,8 @@ export default function BlogPost() {
           <div className={"flex justify-start text-xl"}>
             <div className={"w-fit"}>Created {blogPost.uploadedDate}</div>
           </div>
-          <div className={"markdown-content"}>
+          <hr className={"mt-4 mb-4"}/>
+          <div className={"markdown-content text-xl"}>
             <Markdown>{blogPost.content}</Markdown>
           </div>
         </div>

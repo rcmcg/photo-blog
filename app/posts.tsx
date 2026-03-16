@@ -8,22 +8,22 @@ let blogPosts = [
       "\n" +
       "![Oh, hello](/uploads/liminal/hello.jpg)\n" +
       "\n" +
-      "Title: *Oh, hello*.\n" +
+      "Title: *Oh, hello*.  \n" +
       "Captured: February 27th, 2026\n" +
       "\n" +
-      "![Bus to where?](/uploads/liminal/bus.jpg)\n" +
+      "![Woah, watch it buddy!](/uploads/liminal/bus.jpg)\n" +
       "\n" +
-      "Title: *Bus to where?*\n" +
+      "Title: *Woah, watch it buddy!*  \n" +
       "Captured: February 5th, 2026\n" +
       "\n" +
       "![Mirrored](/uploads/liminal/mirrored.jpg)\n" +
       "\n" +
-      "Title: *Mirrored*.\n" +
+      "Title: *Mirrored*.  \n" +
       "Captured: February 16th, 2026\n" +
       "\n" +
       "![Strange](/uploads/liminal/tree.jpg)\n" +
       "\n" +
-      "Title: *Strange*.\n" +
+      "Title: *Strange*.  \n" +
       "Captured: February 5th, 2026"
   },
   {
