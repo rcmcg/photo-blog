@@ -1,9 +1,9 @@
 let blogPosts = [
   {
     id: 0,
-    title: "First blog post",
-    uploadedDate: "March 15th, 2026",
-    description: "This is the first blog post here"
+    title: "Liminal",
+    uploadedDate: "March 16th, 2026",
+    description: "Some liminal vibes, not necessarily spaces"
   },
   {
     id: 1,
