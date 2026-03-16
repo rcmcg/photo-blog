@@ -14,11 +14,13 @@ export default function BlogPost() {
     <>
       <div className={"flex-col h-fit"}>
         <Header />
-        <div className={"flex justify-center"}>
-          <div className={"w-fit"}>{blogPost.title}</div>
-        </div>
-        <div className={"flex justify-center"}>
-          <div className={"w-fit"}>{blogPost.uploadedDate}</div>
+        <div>
+          <div className={"flex justify-start text-7xl font-iceland mt-5"}>
+            <div className={"w-fit"}>{blogPost.title}</div>
+          </div>
+          <div className={"flex justify-start text-xl"}>
+            <div className={"w-fit"}>Created {blogPost.uploadedDate}</div>
+          </div>
         </div>
       </div>
     </>
