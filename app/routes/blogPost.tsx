@@ -13,7 +13,7 @@ export default function BlogPost() {
 
   return (
     <>
-      <div className={"flex-col h-fit"}>
+      <div className={"flex-col h-fit w-1/2"}>
         <Header />
         <div>
           <div className={"flex justify-start text-7xl font-iceland mt-5"}>
