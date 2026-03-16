@@ -12,10 +12,14 @@ export default function BlogPost() {
 
   return (
     <>
-      <div className={"flex-col"}>
+      <div className={"flex-col h-fit"}>
         <Header />
-        <div>{blogPost.title}</div>
-        <div>{blogPost.uploadedDate}</div>
+        <div className={"flex justify-center"}>
+          <div className={"w-fit"}>{blogPost.title}</div>
+        </div>
+        <div className={"flex justify-center"}>
+          <div className={"w-fit"}>{blogPost.uploadedDate}</div>
+        </div>
       </div>
     </>
   )
