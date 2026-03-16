@@ -1,6 +1,7 @@
 import {Header} from "~/header";
 import {useParams} from "react-router";
 import blogPosts from "~/posts";
+import Markdown from "react-markdown";
 
 export default function BlogPost() {
   let params = useParams();
@@ -20,6 +21,9 @@ export default function BlogPost() {
           </div>
           <div className={"flex justify-start text-xl"}>
             <div className={"w-fit"}>Created {blogPost.uploadedDate}</div>
+          </div>
+          <div>
+            <Markdown>{blogPost.content}</Markdown>
           </div>
         </div>
       </div>
