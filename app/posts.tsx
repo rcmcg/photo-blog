@@ -4,17 +4,12 @@ let blogPosts = [
     title: "Liminal",
     uploadedDate: "March 16th, 2026",
     description: "Some liminal vibes, not necessarily spaces",
-    content: "I don't think I'm using this word correctly, but whatever. Creepy stuff. Things that look a little... off.\n" +
+    content: "I don't think I'm using this word correctly, but whatever. Creepy stuff. Things that look a little off...\n" +
       "\n" +
       "![Oh, hello](/uploads/liminal/hello.jpg)\n" +
       "\n" +
       "Title: *Oh, hello*.\n" +
       "Captured: February 27th, 2026\n" +
-      "\n" +
-      "![Have your say!](/uploads/liminal/have-your-say.jpg)\n" +
-      "\n" +
-      "Title: *Have your say!*\n" +
-      "Captured: February 15th, 2026\n" +
       "\n" +
       "![Bus to where?](/uploads/liminal/bus.jpg)\n" +
       "\n" +

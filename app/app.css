@@ -30,3 +30,7 @@ body {
 .markdown > * {
   all: revert;
 }
+
+.markdown-content img {
+  max-width: 50%;
+}
