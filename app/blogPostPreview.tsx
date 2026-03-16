@@ -5,9 +5,17 @@ interface BlogPostPreviewProps {
   title: string;
   uploadedDate: string;
   description: string;
+  breakOnBottom: boolean;
 }
 
-export function BlogPostPreview({ id, title, uploadedDate, description}: BlogPostPreviewProps) {
+export function BlogPostPreview(
+  {
+    id,
+    title,
+    uploadedDate,
+    description,
+    breakOnBottom
+  }: BlogPostPreviewProps) {
   let navigate = useNavigate()
 
   function handleClick() {
@@ -15,13 +23,17 @@ export function BlogPostPreview({ id, title, uploadedDate, description}: BlogPos
   }
 
   return (
-    <div
-      className={"border rounded-2xl p-2 m-2 mb-5"}
-      onClick={handleClick}
-    >
-      <div>{title}</div>
-      <div>Uploaded: {uploadedDate}</div>
+    <div className={"p-2 text-xl"}>
+      <hr />
+      <div
+        onClick={handleClick}
+        className={"underline text-blue-300 cursor-pointer mt-2"}
+      >
+        {title}
+      </div>
       <div>{description}</div>
+      <div>{uploadedDate}</div>
+      {breakOnBottom && <hr className={"mt-3"}/>}
     </div>
   )
 }

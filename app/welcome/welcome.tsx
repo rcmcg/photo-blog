@@ -22,15 +22,17 @@ export function Welcome() {
     <>
       <div className={"flex-col"}>
         <Header />
-        {blogPosts.map(blogPost =>
-          <BlogPostPreview
+        {blogPosts.map((blogPost, index) => {
+          const isLastBlogPost = index == blogPosts.length - 1
+          return <BlogPostPreview
             key={blogPost.id}
             id={blogPost.id}
             title={blogPost.title}
             uploadedDate={blogPost.uploadedDate}
             description={blogPost.description}
+            breakOnBottom={isLastBlogPost}
           />
-        )}
+        })}
       </div>
     </>
   );
