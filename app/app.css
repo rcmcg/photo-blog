@@ -33,6 +33,7 @@ body {
 
 .markdown-content img {
   max-width: 75%;
+  max-height: 60vh;
 }
 
 .markdown-content p {
