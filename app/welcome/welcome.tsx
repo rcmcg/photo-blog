@@ -3,6 +3,9 @@ import {BlogPostPreview} from "~/blogPostPreview";
 import blogPosts from "~/posts";
 
 export function Welcome() {
+  if (typeof window != 'undefined') {
+    document.body.classList.add("skytrain-background")
+  }
 
   return (
     <>

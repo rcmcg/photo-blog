@@ -13,17 +13,21 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-white dark:bg-black;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
-  background-image: url("/background/skytrain-rain-droplets.jpg");
-  background-size: cover;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+.skytrain-background {
+  background-image: url("/background/skytrain-rain-droplets.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* TODO necessary? */
