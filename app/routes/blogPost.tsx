@@ -27,7 +27,6 @@ export default function BlogPost() {
           </div>
           ) : (
             <div>Failed to find blog post with ID {params.id}</div>
-          // TODO Header doesn't work for some reason in this block?
           )}
       </div>
     </>
