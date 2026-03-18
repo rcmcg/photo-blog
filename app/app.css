@@ -64,3 +64,15 @@ body {
   border-width: 5px;
   border-color: white;
 }
+
+.blog-post {
+  width: 90%;
+
+  @media (min-width: 1715px) {
+    width: 75%;
+  }
+
+  @media (min-width: 2450px) {
+    width: 50%;
+  }
+}

@@ -5,7 +5,7 @@ import blogPosts from "~/blogPosts";
 export function Welcome() {
   return (
     <>
-      <div className={"flex-col"}>
+      <div className={"flex-col w-full xl:w-fit"}>
         <Header />
         {blogPosts.map((blogPost, index) => {
           const isLastBlogPost = index == blogPosts.length - 1
