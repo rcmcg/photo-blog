@@ -30,20 +30,28 @@ body {
   background-attachment: fixed;
 }
 
-/* TODO necessary? */
-.markdown > * {
-  all: revert;
-}
-
 .markdown-content img {
   max-height: 60vh;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .markdown-content p {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin-bottom: 16px;
+}
+
+.markdown-content figure {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+  width: fit-content;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .markdown-content img {

@@ -6,25 +6,29 @@ let blogPosts = [
     description: "Some liminal vibes, not necessarily spaces",
     content: "I don't think I'm using this word correctly, but whatever. Creepy stuff. Things that look a little off...\n" +
       "\n" +
-      "![Oh, hello](/uploads/liminal/hello.jpg)\n" +
+      "<figure>\n" +
+      "    <img src=\"/uploads/liminal/hello.jpg\"\n" +
+      "         alt=\"Oh, hello\">\n" +
+      "    <figcaption>Title: <i>Oh, hello</i>. Captured: February 27th, 2026</figcaption>\n" +
+      "</figure>\n" +
       "\n" +
-      "Title: *Oh, hello*.\n" +
-      "Captured: February 27th, 2026\n" +
+      "<figure>\n" +
+      "    <img src=\"/uploads/liminal/bus.jpg\"\n" +
+      "         alt=\"Woah, watch it buddy!\">\n" +
+      "    <figcaption>Title: <i>Woah, watch it buddy!</i> Captured: February 5th, 2026</figcaption>\n" +
+      "</figure>\n" +
       "\n" +
-      "![Woah, watch it buddy!](/uploads/liminal/bus.jpg)\n" +
+      "<figure>\n" +
+      "    <img src=\"/uploads/liminal/mirrored.jpg\"\n" +
+      "         alt=\"Mirrored\">\n" +
+      "    <figcaption>Title: <i>Mirrored</i>. Captured: February 16th, 2026</figcaption>\n" +
+      "</figure>\n" +
       "\n" +
-      "Title: *Woah, watch it buddy!*\n" + // TODO this clips with the Captured.
-      "Captured: February 5th, 2026\n" +
-      "\n" +
-      "![Mirrored](/uploads/liminal/mirrored.jpg)\n" +
-      "\n" +
-      "Title: *Mirrored*.\n" +
-      "Captured: February 16th, 2026\n" +
-      "\n" +
-      "![Strange](/uploads/liminal/tree.jpg)\n" +
-      "\n" +
-      "Title: *Strange*.\n" +
-      "Captured: February 5th, 2026"
+      "<figure>\n" +
+      "    <img src=\"/uploads/liminal/tree.jpg\"\n" +
+      "         alt=\"Claw\">\n" +
+      "    <figcaption>Title: <i>Claw</i>. February 5th, 2026</figcaption>\n" +
+      "</figure>"
   },
   {
     id: 1,

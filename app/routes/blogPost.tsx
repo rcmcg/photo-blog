@@ -1,6 +1,6 @@
 import {Header} from "~/header";
 import {useParams} from "react-router";
-import blogPosts from "~/posts";
+import blogPosts from "~/blogPosts";
 import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import {useEffect} from "react";

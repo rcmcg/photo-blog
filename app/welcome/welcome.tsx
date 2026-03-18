@@ -1,6 +1,6 @@
 import {Header} from "~/header";
 import {BlogPostPreview} from "~/blogPostPreview";
-import blogPosts from "~/posts";
+import blogPosts from "~/blogPosts";
 
 export function Welcome() {
   if (typeof window != 'undefined') {
