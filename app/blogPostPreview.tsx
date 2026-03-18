@@ -23,7 +23,7 @@ export function BlogPostPreview(
   }
 
   return (
-    <div className={"p-2 text-xl"}>
+    <div className={"p-2 text-lg xl:text-xl"}>
       <hr />
       <div
         onClick={handleClick}
