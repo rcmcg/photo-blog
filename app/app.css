@@ -45,3 +45,8 @@ body {
   align-items: center;
   margin-bottom: 16px;
 }
+
+.markdown-content img {
+  border-width: 5px;
+  border-color: white;
+}
