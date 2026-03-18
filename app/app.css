@@ -22,26 +22,57 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
-}
 
-.skytrain-background {
-  background-image: url("/background/skytrain-rain-droplets.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-}
+  @media (max-width: 2160px) {
+    background-image: url("/background/skytrain-monet.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
-/* TODO necessary? */
-.markdown > * {
-  all: revert;
+  @media (min-width: 2160px) {
+    background-image: url("/background/skytrain-rain-droplets.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
 .markdown-content img {
   max-height: 60vh;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .markdown-content p {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin-bottom: 16px;
+}
+
+.markdown-content figure {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+  width: fit-content;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.markdown-content img {
+  border-width: 5px;
+  border-color: white;
+}
+
+.blog-post {
+  width: 90%;
+
+  @media (min-width: 1715px) {
+    width: 75%;
+  }
+
+  @media (min-width: 2450px) {
+    width: 50%;
+  }
 }

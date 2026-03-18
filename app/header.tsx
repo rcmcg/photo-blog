@@ -11,7 +11,7 @@ export function Header() {
     <>
       <div className={"font-iceland"}>
         <div className={"flex justify-center"}>
-          <div className={"text-9xl"}>rcmcgPhotoBlog</div>
+          <div className={"text-5xl xl:text-9xl"}>rcmcgPhotoBlog</div>
         </div>
         <button
           className={"text-4xl underline cursor-pointer w-full"}

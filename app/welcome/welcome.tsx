@@ -1,15 +1,11 @@
 import {Header} from "~/header";
 import {BlogPostPreview} from "~/blogPostPreview";
-import blogPosts from "~/posts";
+import blogPosts from "~/blogPosts";
 
 export function Welcome() {
-  if (typeof window != 'undefined') {
-    document.body.classList.add("skytrain-background")
-  }
-
   return (
     <>
-      <div className={"flex-col"}>
+      <div className={"flex-col w-full xl:w-fit"}>
         <Header />
         {blogPosts.map((blogPost, index) => {
           const isLastBlogPost = index == blogPosts.length - 1
