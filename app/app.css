@@ -22,12 +22,18 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
-}
 
-.skytrain-background {
-  background-image: url("/background/skytrain-rain-droplets.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+  @media (max-width: 2160px) {
+    background-image: url("/background/skytrain-monet.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  @media (min-width: 2160px) {
+    background-image: url("/background/skytrain-rain-droplets.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
 .markdown-content img {

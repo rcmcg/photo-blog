@@ -3,22 +3,10 @@ import {useParams} from "react-router";
 import blogPosts from "~/blogPosts";
 import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
-import {useEffect} from "react";
 
 export default function BlogPost() {
   let params = useParams();
   let blogPost = blogPosts.find(v => v.id == Number(params.id))
-
-  useEffect(() => {
-    if (typeof window != 'undefined') {
-      document.body.classList.remove("skytrain-background")
-    }
-    return () => {
-      if (typeof window != 'undefined') {
-        document.body.classList.add("skytrain-background")
-      }
-    }
-  }, []);
 
   return (
     <>
