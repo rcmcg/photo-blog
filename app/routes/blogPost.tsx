@@ -1,12 +1,11 @@
 import {Header} from "~/header";
 import {useParams} from "react-router";
-import blogPosts from "~/blogPosts";
-import Markdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
+import blogPostsMetadata from "~/blogPosts";
+import {BlogPostContent} from "~/BlogPostContent";
 
 export default function BlogPost() {
   let params = useParams();
-  let blogPost = blogPosts.find(v => v.id == Number(params.id))
+  let blogPost = blogPostsMetadata.find(v => v.id == Number(params.id))
 
   return (
     <>
@@ -21,9 +20,7 @@ export default function BlogPost() {
               <div className={"w-fit"}>Created {blogPost.uploadedDate}</div>
             </div>
             <hr className={"mt-4 mb-4"}/>
-            <div className={"markdown-content text-xl"}>
-              <Markdown rehypePlugins={[rehypeRaw]}>{blogPost.content}</Markdown>
-            </div>
+            <BlogPostContent blogPostId={blogPost.id} />
           </div>
           ) : (
             <div>Failed to find blog post with ID {params.id}</div>
