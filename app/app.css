@@ -36,21 +36,21 @@ body {
   }
 }
 
-.markdown-content img {
+.blog-post-content img {
   max-height: 60vh;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.markdown-content p {
+.blog-post-content p {
   display: flex;
   justify-content: start;
   align-items: center;
   margin-bottom: 16px;
 }
 
-.markdown-content figure {
+.blog-post-content figure {
   display: flex;
   flex-direction: column;
   margin-bottom: 64px;
@@ -60,7 +60,7 @@ body {
   margin-right: auto;
 }
 
-.markdown-content img {
+.blog-post-content img {
   border-width: 5px;
   border-color: white;
 }
