@@ -21,7 +21,7 @@ export default function BlogPost() {
               <div className={"w-fit"}>Created {blogPost.uploadedDate}</div>
             </div>
             <hr className={"mt-4 mb-4"}/>
-            <div className={"markdown-content text-xl"}>
+            <div className={"markdown-content text-md lg:text-lg"}>
               <Markdown rehypePlugins={[rehypeRaw]}>{blogPost.content}</Markdown>
             </div>
           </div>
